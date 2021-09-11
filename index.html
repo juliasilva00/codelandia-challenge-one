@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Challenge One | Codelândia</title>
+    <script src="https://kit.fontawesome.com/8cc950fa04.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header_container">
+            <div class="title-header">
+                <p>Codelândia</p>
+                <p>blog</p>
+            </div>
+
+            <div class="pesquisa">
+                <input type="text" id="search" placeholder="Pesquisar no blog">
+                <i class="fas fa-search"></i>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!--Section-->
+
+    <section class="main-container">
+
+        <article>
+            <div class="date">
+                <p>02 de jul, 2021</p>
+                <i class="far fa-heart"></i>
+            </div>
+            <h3 class="title">Agora é oficial o Windows 11 está vindo</h3>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi libero,
+                dolorum explicabo
+                neque obcaecati pariatur? Ipsum, veniam. Culpa, eveniet. Iste dicta iusto cum corporis sapiente.
+            </p>
+        </article>
+
+        <article>
+            <div class="date">
+                <p>02 de jul, 2021</p>
+                <i class="far fa-heart"></i>
+            </div>
+            <h3 class="title">Tim Berners-Lee vai leiloar o código-fonte da web</h3>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, ratione aspernatur
+                rerum esse maxime voluptates, eligendi repellendus, error quidem quod excepturi earum. Quos nam suscipit
+                saepe, fugit odit fugiat totam, cumque, aliquid dignissimos aspernatur minima cum! Consequuntur vero
+                soluta quisquam quasi hic, praesentium et a delectus corporis, alias, nihil debitis iste sed?
+            </p>
+        </article>
+
+        <article>
+            <div class="date">
+                <p>02 de jul, 2021</p>
+                <i class="far fa-heart"></i>
+            </div>
+            <h3 class="title">Tem Firefox novo no pedaço e você vai querer migrar</h3>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, pariatur.
+                Doloremque, atque.
+            </p>
+        </article>
+
+        <article>
+            <div class="date">
+                <p>02 de jul, 2021</p>
+                <i class="far fa-heart"></i>
+            </div>
+            <h3 class="title">John McAfee, criador do antivírus McAfee, morre</h3>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptates perspiciatis
+                hic commodi rem nihil iure vel modi fuga soluta aut quas, nostrum iste natus sequi quidem beatae unde
+                asperiores necessitatibus iusto. Rerum molestias, suscipit aliquid, labore consectetur sequi incidunt
+                porro cupiditate consequuntur sit aut voluptates maiores dolorem assumenda. Voluptatibus, velit
+                consectetur.
+            </p>
+        </article>
+
+
+
+
+
+
+
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('article', { delay: 200 });
+        ScrollReveal().reveal('.date', { delay: 400 });
+        ScrollReveal().reveal('.title', { delay: 500 });
+        ScrollReveal().reveal('.description', { delay: 600 });
+    </script>
+
+
+
+
+</body>
+
+</html>

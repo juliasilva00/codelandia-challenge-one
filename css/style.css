@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3F5F7;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 200px;
+    background: linear-gradient(to right, #574ae8, #3ea1db);
+    color: #fff;
+    padding: 35px;
+    position: relative;
+}
+
+.header_container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.title-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+/*barra de pesquisa*/
+
+.header_container .pesquisa input {
+    padding: 15px;
+    width: 800px;
+    color: #F3F5F7;
+    position: absolute;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* background-image: url('/assets/lupa.svg');
+    background-repeat: no-repeat;
+     */
+}
+
+input::placeholder {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.5);
+    padding-left: 20px;
+}
+
+.pesquisa i {
+    position: relative;
+    bottom: -15px;
+    right: -10px;
+}
+
+/*section*/
+
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    padding: 20px;
+    box-shadow: 0 0 15px #b6b6b6;
+    background: #F3F5F7;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #b6b6b6;
+}
+
+.date i {
+    color: #b6b6b6;
+    cursor: pointer;
+}
+
+.title {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 450;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #313131;
+}
+
+.description {
+    margin: 1rem 0;
+    color: #b6b6b6;
+}
+
+/*responsive*/
+
+@media (max-width: 1024px) {
+    .main-container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .header_container .pesquisa input {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
